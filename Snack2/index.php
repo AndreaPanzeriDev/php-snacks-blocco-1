@@ -28,7 +28,7 @@ $mail = $GET_['mail'];
         </form>
 
         <?php
-            if(strlen($name) > 3 && strpos($mail, '@') != false && strpos($mail, '.') != false && is_numeric($age) !=  false){
+            if(strlen($name) > 3 && strpos($mail, '@') !== false && strpos($mail, '.') !== false && is_numeric($age) !==  false){
                echo('Accesso riuscito');
             }else{
                echo('Accesso negato');
