@@ -1,29 +1,32 @@
 
 
 <?php
-$partite[
+$studenti = [
     [
-        'partita' => 'Olimpia Milano - Cantú',
-        'punteggiocasa' =>  55,
-        'punteggioospite' => 60,
+      'partita' => 'Milano - Bologna',
+      'punteggioCasa' => 58,
+      'punteggioOspiti' =>  56
     ],
     [
-        'partita' => 'Brescia',
-        'punteggiocasa' =>  20,
-        'punteggioospite' => 6230,
+        'partita' => 'Milano - Bologna',
+        'punteggioCasa' => 58,
+        'punteggioOspiti' =>  56
     ],
-
     [
-        'partita' => 'Olimpia Milano - Cantú',
-        'punteggiocasa' =>  33,
-        'punteggioospite' => 34,
+        'partita' => 'Milano - Bologna',
+        'punteggioCasa' => 58,
+        'punteggioOspiti' =>  56
     ],
-]
+  ];
 
 ?>
 
+
 <ul>
-    <?php for($i=0; $i < count($partite); $i++){?>
-        <li><?php $partite[$i]['partita']?></li>
-    <?php }?>
+    <?php for ($i=0; $i < count($studenti); $i++ ){ ?>
+        <li>
+            <?php echo $studenti[$i]['partita'] . ' | ' . $studenti[$i]['punteggioCasa'] . ' - ' . $studenti[$i]['punteggioOspiti']?>
+        </li>
+    <?php } ?>
 </ul>
+
