@@ -39,4 +39,30 @@ $posts = [
         ]
     ],
 ];
+
+for($i=0; $i < count($posts); $i++){
+    echo '<hr>';
+    $key = array_keys($posts)[$i];
+
+    echo $key;
+
+    echo '<br/>';
+
+    for($z=0; $z < count(($posts)[$key]); $z++){
+
+        echo '<br/>';
+        echo $posts[$key][$z]['title'];
+        echo '<br/>';
+
+        echo $posts[$key][$z]['author'];
+        echo '<br/>';
+
+        echo $posts[$key][$z]['text'];
+        echo '<br/>';
+    }
+
+    
+}
+echo '<hr>';
 ?>
+
