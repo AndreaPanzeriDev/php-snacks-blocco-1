@@ -36,25 +36,26 @@
   </head>
 
     </head>
-    <body class="d-flex justify-content-around">
+    <body class="">
     <div class="border border-secondary">
         <ul>
-            <li>
-                <?php forEach($db['teachers'] as $x) {
-                    echo var_dump($x);
-                }?>
+           
+            <?php for($i=0; $i < count($db['teachers']); $i++){
+                echo $db['teachers'][$i]['name'] . ' ' . $db['teachers'][$i]['lastname'];
+                echo '</br>';
+            }
+            ?>
                 
-            </li>
+           
         </ul>
     </div>
     <div class="border border-success">
         <ul>
-            <li>
-                <?php forEach($db['pm'] as $x) {
-                    echo $db['pm']['name'];
-                }?>
+            
+            <?php forEach($db['pm'] as $value) {
+                echo "<li>{$value['name']}  {$value['lastname']}</li>";
+            }?>
                 
-            </li>
         </ul>
     </div>
 
