@@ -51,7 +51,7 @@
         <ul>
             <li>
                 <?php forEach($db['pm'] as $x) {
-                    echo var_dump($x);
+                    echo $db['pm']['name'];
                 }?>
                 
             </li>
